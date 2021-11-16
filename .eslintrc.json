@@ -1,0 +1,7 @@
+{
+  "extends": "next/core-web-vitals",
+  "parser": "@babel/eslint-parser",
+  "rules": {
+    "jsx-a11y/anchor-is-valid": "off"
+  }
+}
