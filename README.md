@@ -4,6 +4,10 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) for picking travel destinations.
 
+## Live Link
+
+[View my bucket list on Travel Hunter](https://travel-hunter.vercel.app/)
+
 ## Built With
 
 - Next.js
