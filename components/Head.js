@@ -2,7 +2,8 @@ import NextHead from "next/head";
 import { string } from "prop-types";
 
 const defaultContent = "";
-const ogImage = "/travel-pick.webp";
+const ogImage =
+  "https://res.cloudinary.com/george-swift/image/upload/v1637272531/bucketlist_ibwbvc.webp";
 
 const Head = (props) => (
   <NextHead>
