@@ -52,6 +52,10 @@ export const PlaceFormStyles = styled.form`
     & + label[datatype="tags"] {
       margin-left: 0.3rem;
     }
+
+    span {
+      font-size: 0.8rem;
+    }
   }
 
   input:not([type="radio"]),
@@ -74,6 +78,12 @@ export const PlaceFormStyles = styled.form`
       border: 1px solid ${theme.colors.darkGrey};
       outline: 0;
     }
+  }
+
+  input[type="radio"] {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
   }
 
   input:required + label:after {
