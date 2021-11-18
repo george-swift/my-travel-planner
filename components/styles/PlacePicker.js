@@ -37,7 +37,7 @@ const PlacePickerSection = styled.section`
   p:not([class="description"]),
   label {
     text-transform: uppercase;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 
   p {
@@ -65,7 +65,14 @@ const PlacePickerSection = styled.section`
   }
 
   input {
-    margin: 0 0.5rem 0 0;
+    width: 1rem;
+    height: 1rem;
+    margin: 0.5rem 0.8rem 0.5rem 0;
+
+    @media (max-width: 500px) {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
   }
 
   button {
@@ -81,6 +88,13 @@ const PlacePickerSection = styled.section`
       &:focus {
         background-color: ${theme.colors.offWhite};
       }
+    }
+  }
+
+  @media (max-width: 500px) {
+    label,
+    label.span {
+      font-size: 0.9rem;
     }
   }
 `;
