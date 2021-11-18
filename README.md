@@ -45,4 +45,4 @@ To learn more about Next.js, take a look at the following resources:
 ## Acknowledgements
 
 - [Photocredits](https://unsplash.com)
-- [Inspiration](https://brittanychiang.com/)
+- [Project Inspiration](https://time-to-have-more-fun.now.sh/)
