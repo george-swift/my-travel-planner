@@ -41,7 +41,7 @@ export default function Hero() {
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Travel Planner
           </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-100">
+          <p className="mt-6 max-w-[315px] mx-auto text-lg leading-8 text-gray-100 tablet:max-w-none">
             Showcases my curated bucket list as well as places I have already
             been to. Can you guess where I&apos;m going to this year?
           </p>

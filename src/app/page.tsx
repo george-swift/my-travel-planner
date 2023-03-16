@@ -12,7 +12,7 @@ export default async function Page() {
   return (
     <AuthProvider>
       <Home>
-        <div className="bg-gray-900">
+        <div className="bg-gray-300">
           <Navigation />
           <Hero />
         </div>
