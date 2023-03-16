@@ -1,6 +1,8 @@
 {
   "name": "my-travel-planner",
-  "version": "0.1.0",
+  "version": "2.0.0",
+  "description": "Web app for personal travel planning",
+  "author": "Ubong George <ubong_george@ymail.com>",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,14 +11,30 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.13",
     "@types/node": "18.14.5",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
+    "classnames": "^2.3.2",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.3",
+    "firebase": "^9.17.2",
     "next": "13.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "server-only": "^0.0.1",
     "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "autoprefixer": "^10.4.13",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.4",
+    "pretty-quick": "^3.1.3",
+    "tailwindcss": "^3.2.7"
   }
 }
