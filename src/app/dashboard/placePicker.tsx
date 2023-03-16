@@ -28,6 +28,14 @@ export default function PlacePicker() {
   }
 
   const queryPlaces = async () => {
+    if (
+      !Array.from(document.querySelectorAll('input[type="radio"]')).some(
+        input => (input as HTMLInputElement).checked
+      )
+    ) {
+      return
+    }
+
     try {
       setShowError(false)
       setIsLoading(true)
