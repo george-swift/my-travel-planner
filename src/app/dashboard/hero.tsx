@@ -27,7 +27,7 @@ export default function Hero() {
           <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-100 ring-1 ring-white/10 hover:ring-white/20">
             Discover some other things I&apos;ve built.{' '}
             <a
-              href="https://ubonggeorge.com"
+              href="https://www.ubonggeorge.com"
               target="_blank"
               rel="noopener noreferrer"
               className="whitespace-nowrap font-semibold text-white"
