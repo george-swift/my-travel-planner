@@ -41,9 +41,9 @@ export default function Hero() {
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Travel Planner
           </h1>
-          <p className="mt-6 max-w-[315px] mx-auto text-lg leading-8 text-gray-100 tablet:max-w-none">
-            Showcases my curated bucket list as well as places I have already
-            been to. Can you guess where I&apos;m going to this year?
+          <p className="mt-6 max-w-[315px] mx-auto text-lg leading-8 text-gray-100 tablet:max-w-[500px]">
+            Designed for organizing my bucket list. I can add my next favorite
+            destination in just a few clicks!
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link
@@ -51,7 +51,7 @@ export default function Hero() {
               onClick={scroll}
               className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-600 shadow-sm hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-50"
             >
-              Tell me already!
+              Start planning
             </Link>
           </div>
         </div>
