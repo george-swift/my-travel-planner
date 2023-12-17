@@ -83,3 +83,8 @@ export const snapshotToArray = (querySnapshot: QuerySnapshot<DocumentData>) => {
     ...(doc.data() as Place)
   }))
 }
+
+export const DestinationCategories = {
+  BUCKET_LIST: 'bucketList',
+  VISITED: 'visited'
+}
