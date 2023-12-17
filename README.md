@@ -10,7 +10,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Built With
 
-- Next.js 13
+- Next.js
 - Firebase
 - TypeScript
 - Tailwind CSS
