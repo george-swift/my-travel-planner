@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
+import { Button } from '@/components'
 
 import { Container } from '@/components'
 
@@ -46,13 +46,11 @@ export default function Hero() {
             destination in just a few clicks!
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Link
-              href="#"
+            <Button
+              text="Get Started"
               onClick={scroll}
               className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-600 shadow-sm hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-50"
-            >
-              Start planning
-            </Link>
+            />
           </div>
         </div>
       </div>
