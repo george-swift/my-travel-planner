@@ -1,12 +1,11 @@
 'use client'
 
 import Image from 'next/image'
-import cn from 'classnames'
-
-import Tag from './tag'
+import { cn, iconByCategoryFilter } from '@/lib/utils'
 
 import eventBus from '@/lib/eventbus'
 import { Place, PlaceTag } from '@/lib/utils'
+import Icon from './icons'
 
 interface Props {
   place: Place
@@ -66,16 +65,21 @@ const Card = ({ place, className }: Props) => {
         </div>
       </div>
 
-      <div className="flex flex-wrap items-center px-6 py-4 gap-2">
+      <div className="flex flex-wrap items-center p-4 gap-1.5">
         {place.tags &&
           Object.keys(place.tags).map(
             (category, i) =>
               place.tags[category as keyof PlaceTag] && (
-                <Tag
+                <span
                   key={i}
-                  tag={place.tags[category as keyof PlaceTag]}
-                  isFlight={category === 'flight'}
-                />
+                  className="inline-flex items-center gap-x-0.5 rounded-full bg-gray-100 px-2.5 py-1 text-[10px] leading-4 font-medium text-gray-800 capitalize"
+                >
+                  <Icon
+                    name={iconByCategoryFilter[category as keyof PlaceTag]}
+                    className="w-3 h-4"
+                  />
+                  {place.tags[category as keyof PlaceTag]}
+                </span>
               )
           )}
       </div>

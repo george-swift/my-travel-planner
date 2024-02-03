@@ -1,4 +1,4 @@
-import cn from 'classnames'
+import { cn } from '@/lib/utils'
 import { MouseEventHandler, PropsWithChildren } from 'react'
 
 interface ButtonProps extends PropsWithChildren {

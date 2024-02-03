@@ -1,22 +1,27 @@
 import IconAirplane from './airplane'
 import IconCancel from './cancel'
+import IconPin from './pin'
 import IconSpinner from './spinner'
+import IconSun from './sun'
 import IconTag from './tag'
 
-type IconProps = {
-  name: string
-}
-
-const Icon = ({ name }: IconProps) => {
+const Icon = ({
+  name,
+  ...props
+}: React.ComponentPropsWithoutRef<'svg'> & { name: string }) => {
   switch (name) {
     case 'cancel':
-      return <IconCancel />
+      return <IconCancel {...props} />
     case 'airplane':
-      return <IconAirplane />
+      return <IconAirplane {...props} />
+    case 'pin':
+      return <IconPin {...props} />
     case 'spinner':
-      return <IconSpinner />
+      return <IconSpinner {...props} />
+    case 'sun':
+      return <IconSun {...props} />
     case 'tag':
-      return <IconTag />
+      return <IconTag {...props} />
 
     default:
       return <></>

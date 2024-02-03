@@ -184,7 +184,7 @@ export default function PlaceForm({
               <Button
                 type="submit"
                 text={isEditMode ? 'Save changes' : 'Add place'}
-                className="w-[48%] py-2 px-3 bg-yellow-400 hover:bg-yellow-500 font-semibold"
+                className="w-[48%] py-2 px-3 text-white bg-teal-600 hover:bg-teal-500 font-semibold"
                 disabled={isMutating}
               />
             </>
@@ -193,7 +193,7 @@ export default function PlaceForm({
               type="button"
               text="Sign in to edit"
               onClick={() => eventBus.emit('login')}
-              className="flex w-full justify-center py-2 px-3 bg-yellow-400 hover:bg-yellow-500 font-semibold"
+              className="flex w-full justify-center py-2 px-3 text-white bg-teal-600 hover:bg-teal-500 font-semibold"
               disabled={isMutating}
             />
           )}

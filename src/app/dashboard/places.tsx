@@ -13,12 +13,12 @@ interface PlacesProps {
 export default function Places({ category, places }: PlacesProps) {
   const categories = {
     [DestinationCategories.BUCKET_LIST]: {
-      title: 'Places on my bucket list',
+      title: 'Places on our bucket list',
       fallback: 'Loading bucket list...',
       notfound: 'Add some places you want to go!'
     },
     [DestinationCategories.VISITED]: {
-      title: "Places I've been",
+      title: 'Places we’ve explored',
       fallback: 'Loading visited places...',
       notfound: "Haven't been anywhere yet..."
     }

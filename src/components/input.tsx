@@ -1,5 +1,5 @@
 import { ChangeEventHandler } from 'react'
-import cn from 'classnames'
+import { cn } from '@/lib/utils'
 
 interface Props {
   id: string
@@ -36,7 +36,7 @@ const Input = ({
       >
         <span>{label}</span>
         {type === 'url' && value && (
-          <span className="text-xs text-yellow-500 font-medium tracking-wide uppercase">
+          <span className="text-xs text-teal-500 font-medium tracking-wide uppercase">
             <a href={value} target="_blank" rel="noopener noreferrer">
               Preview
             </a>

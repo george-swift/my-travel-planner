@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import cn from 'classnames'
+import { cn } from '@/lib/utils'
 
 interface Props {
   className?: string

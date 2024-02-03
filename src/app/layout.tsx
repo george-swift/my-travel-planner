@@ -9,8 +9,8 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: 'My Travel Planner',
-  description: 'Web app for personal travel planning',
+  title: 'My Travel Diary',
+  description: 'Web app that serves as a personal travel diary',
   keywords: ['Next.js', 'React', 'JavaScript'],
   openGraph: {
     images: [

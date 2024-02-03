@@ -40,7 +40,7 @@ const Modal = ({ isOpen, onClose, isErrorShown, title, children }: Props) => (
             leaveFrom="opacity-100 translate-y-0 sm:scale-100"
             leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
-            <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white min-w-[320px] px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-[475px] sm:p-6">
+            <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white min-w-[320px] p-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-[475px]">
               <div className="absolute top-0 right-0 pt-4 pr-4">
                 <Button
                   type="button"
@@ -52,7 +52,7 @@ const Modal = ({ isOpen, onClose, isErrorShown, title, children }: Props) => (
                 </Button>
               </div>
               <div>
-                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-md bg-teal-100">
                   <Icon name="airplane" />
                 </div>
                 <div className="mt-3 text-center sm:mt-5">

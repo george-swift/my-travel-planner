@@ -1,5 +1,6 @@
 import { ChangeEventHandler } from 'react'
-import { defaultTagFilters, PlaceTag } from '@/lib/utils'
+import { defaultTagFilters, iconByCategoryFilter, PlaceTag } from '@/lib/utils'
+import Icon from './icons'
 
 interface Props {
   checkedItems?: PlaceTag
@@ -10,15 +11,17 @@ const RadioGroup = ({ onChange, checkedItems }: Props) => {
   const categories = Object.keys(defaultTagFilters)
 
   return (
-    <div className="w-full py-4 flex flex-wrap">
+    <div className="w-full py-4 grid grid-cols-3">
       {categories.map(category => {
         const filters = Object.keys(
           defaultTagFilters[category as keyof PlaceTag]
         )
+        const iconName = iconByCategoryFilter[category as keyof PlaceTag]
 
         return (
-          <div key={category} className="w-1/3">
-            <label className="text-xs font-bold tracking-wide uppercase text-gray-500">
+          <div key={category}>
+            <label className="flex items-center gap-x-1 text-xs font-semibold uppercase text-gray-500">
+              <Icon name={iconName} className="shrink-0 w-3 h-4 sm:w-4" />
               {category}
             </label>
             <fieldset className="mt-3">
@@ -37,7 +40,7 @@ const RadioGroup = ({ onChange, checkedItems }: Props) => {
                           ? checkedItems[category as keyof PlaceTag] === filter
                           : false
                       }
-                      className="h-4 w-4 border-gray-300 text-yellow-500 cursor-pointer focus:ring-yellow-500"
+                      className="h-4 w-4 border-gray-300 text-teal-500 cursor-pointer focus:ring-teal-500"
                     />
                     <label
                       htmlFor={filter}

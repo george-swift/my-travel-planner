@@ -81,16 +81,16 @@ export default function PlacePicker() {
       className="px-6 py-8 md:flex md:justify-between lg:mt-12 lg:px-8 lg:pr-0"
     >
       <form className="pb-3 tablet:w-1/2 tablet:order-1">
-        <h2 className="text-2xl font-extrabold tracking-tight text-slate-900">
-          This year I&apos;m going to...
+        <h2 className="mb-8 text-2xl font-extrabold tracking-tight text-slate-900">
+          This year we’re going to...
         </h2>
 
         <RadioGroup onChange={handleChange} />
 
         <div className="mt-5 flex justify-center gap-2.5 md:justify-start">
           <Button
-            text="Show match"
-            className="bg-yellow-400 py-2.5 px-3.5 font-semibold text-gray-900 shadow-sm hover:bg-yellow-500"
+            text="Show matching destination"
+            className="bg-teal-500 py-2.5 px-3.5 font-semibold text-white shadow-sm hover:bg-teal-600"
             onClick={queryPlaces}
             disabled={isLoading}
           />
@@ -98,7 +98,7 @@ export default function PlacePicker() {
           {isFilterSelected && (
             <Button
               text="Clear filters"
-              className="bg-white py-2.5 px-3.5 font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+              className="py-2.5 px-3.5 font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
               onClick={clearFilters}
             />
           )}

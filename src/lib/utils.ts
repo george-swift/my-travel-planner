@@ -1,4 +1,6 @@
 import { DocumentData, QuerySnapshot } from 'firebase/firestore'
+import clsx from 'classnames'
+import { twMerge } from 'tailwind-merge'
 
 export interface LoginCredentials {
   email: string
@@ -88,3 +90,15 @@ export const DestinationCategories = {
   BUCKET_LIST: 'bucketList',
   VISITED: 'visited'
 }
+
+export const iconByCategoryFilter = {
+  type: 'pin',
+  temperature: 'sun',
+  flight: 'airplane'
+}
+
+export const cn = (
+  ...classNames: Array<
+    string | undefined | Record<string, string | boolean | undefined>
+  >
+) => twMerge(clsx(classNames))

@@ -1,10 +1,16 @@
-const IconCancel = () => (
+import { cn } from '@/lib/utils'
+
+const IconCancel = ({
+  className,
+  ...props
+}: React.ComponentPropsWithoutRef<'svg'>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     fill="currentColor"
-    className="w-6 h-6"
+    className={cn('w-6 h-6', className)}
     aria-hidden="true"
+    {...props}
   >
     <path
       fillRule="evenodd"
