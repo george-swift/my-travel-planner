@@ -70,7 +70,7 @@ export default function SignInForm({ isOpen }: Props) {
           <Button
             type="submit"
             text="Sign in"
-            className="flex w-full justify-center py-2 px-3 bg-teal-600 hover:bg-teal-500 font-semibold"
+            className="flex w-full justify-center py-2 px-3 text-white bg-teal-600 hover:bg-teal-500 font-semibold"
             disabled={isSubmitting}
           />
         </div>
